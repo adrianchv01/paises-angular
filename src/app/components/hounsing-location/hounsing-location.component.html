@@ -1,0 +1,17 @@
+<div class="w-full max-w-xs mx-auto">
+  <section class="mt-4 bg-white shadow-md rounded-xl overflow-hidden dark:bg-gray-800">
+    <img 
+      [src]="housingLocation.photo" 
+      alt="Exterior de {{housingLocation.name}}" 
+      class="w-full h-48 object-cover"
+    />
+    <div class="p-4">
+      <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
+        {{ housingLocation.name }}
+      </h2>
+      <p class="text-sm text-gray-600 dark:text-gray-300">
+        {{ housingLocation.city }}
+      </p>
+    </div>
+  </section>
+</div>
