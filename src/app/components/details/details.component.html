@@ -1,1 +1,12 @@
-<p>details works!</p>
+<article>
+    <img 
+        class="listing-photo"
+        [src]="housingLocation?.photo"
+    />
+    <section>
+        <h2>About this location</h2>
+        <ul>
+            <li>Units available: {{housingLocation?.availableUnits}}</li>
+        </ul>
+    </section>
+</article>
