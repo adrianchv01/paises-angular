@@ -3,19 +3,21 @@
 
   <!-- Formulario centrado y contenido limitado -->
   <form
-    action=""
     class="flex items-center space-x-3 bg-white shadow-md rounded-xl p-4 dark:bg-gray-800 max-w-md mx-auto mb-8"
-  >
+    >
     <input
       type="text"
-      placeholder="Filter by city"
+      placeholder="Filtrar por ciudad"
       class="flex-1 rounded-lg border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white text-sm p-2.5 focus:outline-none focus:ring-2 focus:ring-purple-500"
-    />
+      #filter
+      />
     <button
       type="button"
       class="transition-all duration-200 focus:outline-none text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
-    >
-      Search
+      (click)="filterLocation(filter.value)"
+      
+      >
+      Buscar
     </button>
   </form>
 
@@ -24,7 +26,7 @@
     class="results grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
   >
     <app-hounsing-location
-      *ngFor="let housingLocation of housingLocationList"
+      *ngFor="let housingLocation of filterLocationList"
       [housingLocation]="housingLocation"
     >
     </app-hounsing-location>

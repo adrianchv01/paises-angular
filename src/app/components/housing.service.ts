@@ -126,4 +126,9 @@ export class HousingService {
   }
 
 
+  getForm(name:string, lastName: string, email:string){
+    console.log(`El nombre es ${name} ${lastName} y correo: ${email}`);
+  }
+
+
 }

@@ -1,13 +1,11 @@
 <main class="main">
-  <a routerLink="['/']">
-  <header class="brand-home">
-    <img class="brand-logo" src="" alt="logo">
-  </header>
+  <a routerLink="/" class="flex justify-center gap-2 p-3 bg-purple-700 transition-all duration-300">
+    <header class="brand-home">
+      <img class="brand-logo w-auto h-8 mx-auto invert" src="home.svg" alt="Home"> 
+      <span class="text-white font-medium">Home</span>   
+    </header>
   </a>
   <section class="content">
     <router-outlet />
   </section>
-
 </main>
-
-

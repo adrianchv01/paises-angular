@@ -9,10 +9,17 @@
       <h2 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">
         {{ housingLocation.name }}
       </h2>
-      <p class="text-sm text-gray-600 dark:text-gray-300">
-        {{ housingLocation.city }}
+      <p class="text-sm text-gray-600 dark:text-gray-300 mb-2" >
+        Ciudad: {{ housingLocation.city }}
       </p>
-      <a [routerLink]="[ '/details', housingLocation.id]" routerLinkActive="router-link-active">mas info</a>
+      <a 
+  [routerLink]="[ '/details', housingLocation.id ]" 
+  routerLinkActive="router-link-active"
+  class="inline-block px-4 py-2 bg-purple-600 text-white font-semibold rounded-lg shadow-md hover:bg-purple-700 transition duration-300"
+>
+  Más info
+</a>
+
     </div>
   </section>
 </div>
